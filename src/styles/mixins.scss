@@ -1,0 +1,10 @@
+@mixin position-absolute{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+}
+
+@mixin font( $size, $color, $weight : 500){
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}

@@ -1,0 +1,20 @@
+.bg-pink{
+    background: #FFACA7;
+}
+
+.bg-black{
+    background: #000;
+}
+
+.availabil{
+    color: $font-col2;
+    circle{
+        fill: $font-col2;
+    }
+}
+.limited{
+    color: $font-col4;
+    circle{
+        fill: $font-col4;
+    }
+}
