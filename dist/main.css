@@ -43,12 +43,16 @@ ul, li {
     display: flex;
     align-items: center; }
     .prod__top-panel-item {
+      margin-right: 18px;
+      padding: 0;
+      line-height: 0;
       border: none;
       background: #fff;
       cursor: pointer; }
   .prod__image {
     width: 217px;
-    line-height: 0%; }
+    line-height: 0%;
+    padding-top: 5px; }
   .prod__footer {
     border-top: 1px solid #EBEBEB;
     margin-top: -5px; }
@@ -79,7 +83,7 @@ ul, li {
       cursor: pointer; }
 
 .popularity-bar {
-  padding-top: 15px;
+  padding-top: 19px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -95,11 +99,12 @@ ul, li {
     align-items: center;
     font-size: 12px;
     color: #7EB105;
-    font-weight: 700; }
+    font-weight: 500; }
     .popularity-bar__comments a img {
       margin-right: 5px; }
 
 .product-code {
+  margin-top: 2px;
   font-size: 10px;
   color: #212121;
   font-weight: 600; }
@@ -107,6 +112,8 @@ ul, li {
     color: #999999; }
 
 .product-availability {
+  margin: 0;
+  line-height: 100%;
   font-size: 12px; }
   .product-availability span {
     padding-left: 5px; }
@@ -114,9 +121,12 @@ ul, li {
 .product-title {
   font-size: 14px;
   color: #212121;
-  font-weight: 500; }
+  font-weight: 500;
+  margin: 0;
+  padding-top: 8px; }
 
 .memory-opt-prod {
+  padding-top: 8px;
   visibility: hidden; }
   .memory-opt-prod input[type="radio"] {
     display: none; }
@@ -130,7 +140,7 @@ ul, li {
     font-weight: 500;
     line-height: 16px;
     border-bottom: 1px dashed #7EB105;
-    margin-right: 7px;
+    margin-right: 10px;
     cursor: pointer; }
 
 .prod-price__desc {
@@ -163,7 +173,9 @@ ul, li {
 .prod-price__saving {
   font-size: 12px;
   color: #7EB105;
-  font-weight: 500; }
+  font-weight: 500;
+  padding: 6px 0 10px 0;
+  margin: 0; }
   .prod-price__saving span {
     font-weight: 700; }
 
@@ -178,7 +190,7 @@ ul, li {
   display: flex;
   align-items: center; }
   .sale__img {
-    padding-right: 10px; }
+    padding-right: 7px; }
   .sale__title {
     font-size: 12px;
     color: #212121;
@@ -194,16 +206,17 @@ ul, li {
 .prod-short-info__title {
   font-size: 14px;
   color: #212121;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 17px 0 0 0; }
 
 .prod-short-info__desc ul {
-  padding-left: 25px; }
+  padding-left: 21px; }
   .prod-short-info__desc ul li {
     list-style: url("/assets/icons/Ellipse-grey.svg");
     font-size: 14px;
     color: #999999;
     font-weight: 500;
-    line-height: 19px; }
+    line-height: 140%; }
 
 .prod-hidden-info {
   position: absolute;
@@ -214,8 +227,8 @@ ul, li {
   left: -1px;
   width: calc(100% + 2px);
   display: none;
+  padding: 6px 15px 19px 15px;
   background: #fff;
-  padding-top: 15px;
   border: 1px solid transparent;
   border-radius: 3px;
   border-top-left-radius: 0;
@@ -233,7 +246,6 @@ ul, li {
   .list-products__item:hover .prod-hidden-info {
     box-sizing: border-box;
     display: block;
-    padding: 13px 16px;
     border: 1px solid #7EB105;
     border-top: none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); }
